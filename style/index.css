@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    font-family:  'Open Sans';
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+.header{
+    background: #FFF8F3;
+    background-image: url('../images/header_bg.png'),url("../images/developer.png");
+    background-repeat: no-repeat;
+    background-position: bottom right,left;
+}
+.btn{
+    height: 64px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    font-weight:700;
+    font-size:20px;
+    border: 0;
+    padding: 18px 35px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+.color-parymary{
+    color: #FD6E0A;
+    
+}
+nav li{
+    list-style: none;
+    margin-left: 50px;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    margin:  38px 59px 43px 200px;
+}
+.banner-sunbtitale{
+    font-weight: 600;
+    font-size: 45px;
+}
+.banner-titale{
+    font-weight: 700;
+    font-size:65px;
+    margin-bottom: 20px;
+}
+.banner-descrraption{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.cotact-btn{
+    border: 1px solid #FD6E0A;
+    height: 64px;
+    border-radius: 5px;
+    padding: 18px 35px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FD6E0A;
+}
+/* main */
+main{
+    max-width: 1140px;
+margin: 0 auto;
+}
+/* about  secattion */
+
+.about{
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+}
+.section-title{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.section-descraptnio{
+    color: #757575;
+    font-size: 18px; 
+    margin-bottom: 30px;   
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    margin-top: 30px;
+}
+.info-title{
+    color: #757575;
+    font-size: 20px;
+}
+.info-descaription{
+    color: #474747;
+    font-weight: 700;
+    font-size: 20px;
+}
+.what-i-do{
+    font-size: 25px;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.what-i-do-descraption{
+    text-align: center;
+    padding: 0 160px;
+    margin-top: 20px;
+}
+.skils-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 70px;
+}
+.skils-tital{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.skild{
+    color: #757575;
+}
+.skils{
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+.resumi-section-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 35px;
+}
+.main-resumi{
+        display: flex;
+}
+.resumu-tital{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.subject{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.year{
+    color: #757575;
+    
+}
+.description{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: #757575;
+}
+.single-option{
+    padding: 0px 30px;
+    margin-top: 10px;
+}
+hr{
+    width: 550px;
+    margin-left: 10px;
+}
+.resumi-btn{
+   text-align: center;
+   margin-top: 50px;
+}
+.contact{
+    display: flex;
+    gap: 100px;
+    background:#FFF8F3;
+    padding: 130px 200px;
+    margin-top: 70px;
+}
+.contactcontact .section-title{
+    text-align: left;
+}
+.contact input[type="text"],input[type="email"] ,textarea{
+    margin-bottom: 24px;
+    width: 100%;
+    padding: 18px 30px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #FD6E0A;
+
+}
+.description{
+    margin-bottom: 30px;
+}
+.contact a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+/* Responsive css */
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+        align-items: start;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner{
+        margin: 0;
+        padding: 10px;
+    }
+    .cotact-btn{
+        margin-top: 10px;
+    }
+    .skils-container,.banner,nav{
+        flex-direction: column;
+    }
+    nav{
+       padding: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .what-i-do-descraption{
+        padding: 15px;
+        text-align: justify;
+    }
+    .main-resumi{
+        flex-direction: column;
+    }
+    hr{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .about-info-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: 40px;
+    }
+    .contact input[type="text"],input[type="email"] ,textarea{
+        margin-bottom: 24px;
+        width: 100%;
+        padding: 10px 0px;
+        justify-content: center; 
+    }
+
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+    .main-resumi{
+        flex-direction: column;
+    }
+    .banner img{
+        width: 75%;
+    }
+    hr{
+        width: 700px;
+        margin-left: 10px;
+    }
+    .about{
+        padding: 25px 10px;
+    }
+    .contact{
+        padding: 20px;
+        gap: px;
+    }
+    .contact input[type="text"],input[type="email"] ,textarea{
+        margin-bottom: 24px;
+        width: 100%;
+        padding: 10px 0px;
+        justify-content: center; 
+    }
+    .cotact-btn{
+        margin-top: 10px;
+    }
+}
+.hide{
+    display: none;
+}
